@@ -1,0 +1,51 @@
+@import "_variables.scss";
+@import "_mixins.scss";
+
+* {
+    @include boxSizing;
+}
+html {
+    font-size: 20px;
+    @include mQ($md) {
+        font-size: 18px;
+    }
+}
+.container-fluid {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+
+}
+.blue {
+    color: $blue !important;
+}
+.navbar {
+    border-radius: 0;
+    .navbar-brand {
+        font-family: $headerFont;
+        font-size: 2.5rem;
+        color: $black;
+        transition: 0.1s;
+    }
+    .navbar-toggler-icon {
+        color: $black;
+        transition: 0.1s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover {
+            color: $blue;
+        }
+    }
+    ul {
+        li {
+            a { 
+                color: $black;
+                transition: 0.1s;
+                &:hover {
+                    background-color: white !important;
+                    color: $blue;
+                }
+            }
+        }
+    }
+}
