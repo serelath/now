@@ -13,11 +13,35 @@ html {
 .container-fluid {
     padding-left: 0 !important;
     padding-right: 0 !important;
-
+}
+h2 {
+    font-family: $headerFont;
+    color: $black;
+    font-size: 1.5rem;
+}
+h3 {
+    font-family: $textFont;
+    color: $black;
+    font-size: 1.5rem;
+}
+button {
+    background-color: $blue;
+    border: none;
+    padding: 0.5rem 2rem;
+    a {
+        font-family: $textFont;
+        color: white;
+        font-size: 0.8rem;
+        letter-spacing: 1px;
+    }
 }
 .blue {
     color: $blue !important;
 }
+
+//////////////////
+// NAVBAR START //
+//////////////////
 .navbar {
     border-radius: 0;
     .navbar-brand {
@@ -48,4 +72,11 @@ html {
             }
         }
     }
+} //nav end
+
+///////////////////
+// LANDING START //
+///////////////////
+#landing {
+    margin-top: 15vmin;
 }
